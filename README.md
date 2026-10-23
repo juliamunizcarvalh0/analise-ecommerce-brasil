@@ -1,5 +1,6 @@
 # Análise de E-commerce no Brasil: pipeline SQL + dashboard
 
+[![CI](https://github.com/juliamunizcarvalh0/analise-ecommerce-brasil/actions/workflows/ci.yml/badge.svg)](https://github.com/juliamunizcarvalh0/analise-ecommerce-brasil/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue)
 ![DuckDB](https://img.shields.io/badge/DuckDB-SQL-yellow)
 ![Streamlit](https://img.shields.io/badge/Streamlit-dashboard-ff4b4b)
@@ -63,7 +64,7 @@ data/raw/*.csv  ──►  DuckDB
 ## Como rodar
 
 ```bash
-git clone <url-deste-repositorio>
+git clone https://github.com/juliamunizcarvalh0/analise-ecommerce-brasil.git
 cd analise-ecommerce-brasil
 python -m venv .venv && source .venv/bin/activate
 make install
