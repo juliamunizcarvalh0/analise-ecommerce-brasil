@@ -5,6 +5,8 @@
 ![DuckDB](https://img.shields.io/badge/DuckDB-SQL-yellow)
 ![Streamlit](https://img.shields.io/badge/Streamlit-dashboard-ff4b4b)
 
+**[▶ Abrir o dashboard ao vivo](https://duckdb-ecommerce-dashboard.streamlit.app/)**: sem instalar nada.
+
 Pipeline de dados de ponta a ponta para um e-commerce brasileiro: carrega os dados brutos, transforma tudo com **SQL em camadas** (staging → marts) no DuckDB, valida a qualidade dos dados e entrega um **dashboard interativo** com vendas, logística, satisfação e comportamento de clientes.
 
 Os dados seguem exatamente o formato do [dataset público da Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) (~100 mil pedidos reais). O repositório gera uma versão sintética de 40 mil pedidos para rodar sem download, e **funciona com os dados reais** sem mudar uma linha: basta colocar os CSVs da Olist em `data/raw/`.
@@ -75,7 +77,7 @@ make test
 
 Para usar os **dados reais da Olist**, baixe-os no Kaggle, copie os CSVs para `data/raw/` e rode `make pipeline report`.
 
-O dashboard também sobe direto no [Streamlit Community Cloud](https://streamlit.io/cloud): ele constrói o banco sozinho na primeira execução.
+O dashboard está publicado no [Streamlit Community Cloud](https://duckdb-ecommerce-dashboard.streamlit.app/) e constrói o banco sozinho na primeira execução.
 
 ## Estrutura
 
